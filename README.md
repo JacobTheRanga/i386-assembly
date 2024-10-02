@@ -76,4 +76,9 @@ and doing this will pretty much force you to have a very strong
 understanding with pointers.
 
 
-## Simple Functions
+## Arguments Using the Stack
+
+This program passes arguments to functions
+through the means of pushing the arguments onto the stack
+before the function call. And then restoring the stack
+after the function returns.

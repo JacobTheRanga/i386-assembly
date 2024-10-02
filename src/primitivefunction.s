@@ -1,7 +1,7 @@
         global  _start
 
         section .text
-func:   ; entry
+func:   ; prologue
                 ; push  (
         sub     esp, 4                          ; Allocate 4 bytes on stack for base pointer
         mov     dword [esp], ebp                ; Save previous base pointer to stack
@@ -18,7 +18,7 @@ func:   ; entry
         mov     edx, dword [esp]                ; size
         int     0x80
 
-        ; exit
+        ; epilogue
                 ; leave (
         mov     esp, ebp                        ; Move stack pointer to base pointer
                         ; pop   (
