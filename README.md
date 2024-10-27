@@ -119,3 +119,16 @@ before the function call. Since the caller of the function
 does not append to the stack at all using this method,
 they do not have to worry about restoring the stack
 after the call as the caller's stack frame would not have changed.
+
+## Command-line Arguments
+
+**Source:** *src/cli-arguments.s*
+
+So far I have only interacted with the operating system
+through the use of write system calls. However, for this one
+I had to figure out how command-line arguments were passed over
+to processes when they are invoked and where they are stored.
+
+Just for fun I thought I would try and figure out how and where
+they are stored without looking online, without ANY documentation,
+and without looking at any of the Linux source files.
